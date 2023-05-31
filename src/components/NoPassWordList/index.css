@@ -1,0 +1,17 @@
+.no-password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 250px;
+  height: 200px;
+}
+
+.heading {
+  font-family: 'roboto';
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 25px;
+}

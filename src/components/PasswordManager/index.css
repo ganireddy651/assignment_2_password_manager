@@ -13,6 +13,10 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.main-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+}
 .app-logo {
   height: 60px;
   width: 180px;
@@ -58,6 +62,17 @@ body {
   border-left: 1px solid #94a3b8;
   padding: 15px;
 }
+.button-container {
+  text-align: right;
+}
+.add-btn {
+  background-color: #0b69ff;
+  border: 0;
+  color: #ffffff;
+  height: 25px;
+  width: 45px;
+  border-radius: 3px;
+}
 .password-manager-image {
   width: 35%;
 }
@@ -99,6 +114,11 @@ body {
   margin-top: 15px;
   width: 30%;
 }
+@media (max-width: 576px) {
+  .search-container {
+    width: 50%;
+  }
+}
 .bottom-section {
   background-color: #5763a5;
   padding-left: 50px;
@@ -113,9 +133,59 @@ body {
   margin-bottom: 20px;
 }
 .checkbox-input {
-  height: 25px;
+  padding: 35px;
 }
 .label-text {
   font-size: 13px;
   color: #ffffff;
+}
+.password-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 576px) {
+  .app-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .app-logo {
+    height: 40px;
+    width: 130px;
+  }
+  .main-heading {
+    font-size: 20px;
+  }
+  .form-container {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .password-manager-image {
+    order: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form {
+    order: 1;
+    width: 100%;
+  }
+  .bottom-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .password-count-heading {
+    font-size: 13px;
+  }
+  .password-count {
+    height: 17px;
+    width: 25px;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .password-list {
+    padding-left: 0;
+    justify-content: center;
+  }
 }
